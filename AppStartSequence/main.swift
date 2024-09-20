@@ -10,13 +10,6 @@ import UIKit
 UIApplicationMain(
     CommandLine.argc,
     CommandLine.unsafeArgv,
-    nil,
+    NSStringFromClass(CustomApplication.self), // to use the CustomApplicationObject => For monitering Event happing like userTouch
     NSStringFromClass(AppDelegate.self)
 )
-
-//_ = UIApplicationMain(
-//    CommandLine.argc,
-//    UnsafeMutableRawPointer(CommandLine.unsafeArgv).bindMemory(to: UnsafeMutablePointer<Int8>.self, capacity: Int(CommandLine.argc)),
-//    nil,
-//    NSStringFromClass(AppDelegate.self)
-//)
